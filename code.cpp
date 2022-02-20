@@ -11,23 +11,23 @@ using namespace std;
 int maxCandies(vector <int> arr, int k) {
     // Write your code here
     int n = arr.size();
-    priority_queue<int> maxValue;
+    priority_queue<int> maxValue; //O(N) space
 
     //nlog(n)
-    for (int item : arr) {
+    for (int item : arr) { //O(N) time
         maxValue.push(item);
     }
 
     //klog(k);
     int sum = 0;
-    while (k > 0) {
+    while (k > 0) { //O(K) time
         int cur = maxValue.top();
         maxValue.pop();
         sum += cur;
-        maxValue.push(cur / 2);
+        maxValue.push(cur / 2); //O(log N)
         k--;
     }
-    return sum;
+    return sum; //Time: O(N + K * log(N)), space O(N) 
 }
 
 
