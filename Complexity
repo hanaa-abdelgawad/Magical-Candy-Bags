@@ -4,3 +4,5 @@ O(n)log(n) to build the maxHeap, and O(k)log(n) to eat Candies.
 1 ≤ N ≤ 10,000
 1 ≤ k ≤ 10,000
 the time will exceed 1e8.
+
+Time: O(N + K * log(N)), space O(N) 
