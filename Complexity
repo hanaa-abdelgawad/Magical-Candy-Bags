@@ -6,3 +6,4 @@ O(n)log(n) to build the maxHeap, and O(k)log(n) to eat Candies.
 the time will exceed 1e8.
 
 Time: O(N + K * log(N)), space O(N) 
+Reference: https://leetcode.com/discuss/interview-question/1184501/facebook-recruiting-portal-magical-candy-bags
